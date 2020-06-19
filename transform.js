@@ -12,10 +12,8 @@ class Transform {
             "menus": {}
         };
     },
-    flippedVertically: false,
-    flippedHorizontally: false,
     flipped({check}) {
-        return this.flippedVertically;
+        return false;
     }
 }
 Scratch.extensions.register(new Transform());

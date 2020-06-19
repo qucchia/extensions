@@ -11,7 +11,7 @@ class Transform {
             }],
             "menus": {}
         };
-    },
+    }
     flipped({check}) {
         return false;
     }

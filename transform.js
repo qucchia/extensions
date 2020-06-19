@@ -6,7 +6,7 @@ class Transform {
             "blocks": [{
                 "opcode": "flipped",
                 "blockType": "Boolean",
-                "text": "flipped vertically?",
+                "text": "flipped [AXIS]?",
                 "arguments": {
                     AXIS: {
                         type: "String",
@@ -16,6 +16,7 @@ class Transform {
             }],
             "menus": {
                 axisMenu: {
+                    acceptReporters: true,
                     items: ["vertically", "horizontally"]
                 }
             }

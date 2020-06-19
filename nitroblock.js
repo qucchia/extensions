@@ -1,4 +1,3 @@
-// test, this is by NitroCipher
 class NitroBlock {
     //Converted from https://raw.githubusercontent.com/NitroCipher/NitroBlock/master/MainScript.js to Scratch 3.0 using Ext2to3!
     getInfo() {

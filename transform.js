@@ -7,13 +7,22 @@ class Transform {
                 "opcode": "flipped",
                 "blockType": "Boolean",
                 "text": "flipped vertically?",
-                "arguments": {}
+                "arguments": {
+                    AXIS: {
+                        type: "String",
+                        menu: "axisMenu"
+                    }
+                }
             }],
-            "menus": {}
+            "menus": {
+                axisMenu: {
+                    items: ["vertically", "horizontally"]
+                }
+            }
         };
     }
-    flipped({check}) {
-        return this.flippedVertically;
+    flipped({TYPE}) {
+        return false;
     }
 }
 Scratch.extensions.register(new Transform());

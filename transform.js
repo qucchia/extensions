@@ -1,5 +1,4 @@
 class Transform {
-    flippedVertically: false,
     getInfo() {
         return {
             "id": "Transform",

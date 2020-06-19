@@ -4,16 +4,17 @@ class Transform {
             "id": "Transform",
             "name": "Transform",
             "blocks": [{
-                "opcode": "check",
+                "opcode": "flipped",
                 "blockType": "Boolean",
-                "text": "working?",
+                "text": "flipped vertically?",
                 "arguments": {}
             }],
             "menus": {}
         };
     }
-    check({check}) {
-        return true
+    "flipped-vertically": false;
+    flipped({check}) {
+        return this["flipped-vertically"];
     }
 }
 Scratch.extensions.register(new Transform());

@@ -1,35 +1,19 @@
 class Transform {
-  getInfo() {
-    return {
-      "id": "Transform",
-      "name" "Transform",
-      "blocks": [
-        {
-          "opcode": "substringy",
-          "blockType": "reporter",
-          "text": "letters [num1] through [num2] of [string]",
-          "arguments": {
-            "num1": {
-              "type": "number",
-              "defaultValue": "2"
-            },
-            "num2": {
-              "type": "number",
-              "defaultValue": "5"
-            },
-            "string": {
-              "type": "string",
-              "defaultValue": "hello world"
-            }
-          }
-        }
-      ],
-      "menus": {}
-    };
-  }
-  substringy({num1, num2, string}) {
-    return string.substring(num1 - 1, num2);
-  }
+    getInfo() {
+        return {
+            "id": "Transform",
+            "name": "Transform",
+            "blocks": [{
+                "opcode": "check",
+                "blockType": "Boolean",
+                "text": "working?",
+                "arguments": {}
+            }],
+            "menus": {}
+        };
+    }
+    check({check}) {
+        return true
+    }
 }
-
 Scratch.extensions.register(new Transform());

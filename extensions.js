@@ -22,10 +22,9 @@ class Transform {
               "defaultValue": "hello world"
             }
           }
-         }
+        }
       ],
-      "menus": {
-      }
+      "menus": {}
     };
   }
   substringy({num1, num2, string}) {

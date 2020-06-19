@@ -11,13 +11,11 @@ class Transform {
             }],
             "menus": {}
         };
-    }
-    flipped: {
-        vertically: false,
-        horizontally: false
     },
+    flippedVertically: false,
+    flippedHorizontally: false,
     flipped({check}) {
-        return this.flipped.vertically;
+        return this.flippedVertically;
     }
 }
 Scratch.extensions.register(new Transform());

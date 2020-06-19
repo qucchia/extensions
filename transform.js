@@ -1,4 +1,5 @@
 class Transform {
+    flippedVertically: false,
     getInfo() {
         return {
             "id": "Transform",
@@ -13,7 +14,7 @@ class Transform {
         };
     }
     flipped({check}) {
-        return false;
+        return this.flippedVertically;
     }
 }
 Scratch.extensions.register(new Transform());

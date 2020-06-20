@@ -27,8 +27,8 @@ class Transform {
             }
         };
     }
-    flipped(TYPE, util) {
-        return TYPE;
+    flipped(AXIS) {
+        return AXIS;
     }
     list() {
         return [1,2,3,4,5];

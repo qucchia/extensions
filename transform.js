@@ -23,7 +23,7 @@ class Transform {
         };
     }
     flipped(TYPE, util) {
-        return [1,2,3];
+        return {name:"Bob",age:30};
     }
 }
 Scratch.extensions.register(new Transform());

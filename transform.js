@@ -22,8 +22,8 @@ class Transform {
             }
         };
     }
-    flipped({TYPE}) {
-        return false;
+    flipped(TYPE, util) {
+        return util.target.x;
     }
 }
 Scratch.extensions.register(new Transform());

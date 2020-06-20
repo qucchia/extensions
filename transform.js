@@ -16,7 +16,7 @@ class Transform {
             }, {
                 "opcode": "list",
                 "blockType": "Reporter",
-                "text": "list [LIST]",
+                "text": "list",
                 "arguments": {}
             }],
             "menus": {

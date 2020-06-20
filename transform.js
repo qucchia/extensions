@@ -13,6 +13,11 @@ class Transform {
                         menu: "axisMenu"
                     }
                 }
+            }, {
+                "opcode": "list",
+                "blockType": "Reporter",
+                "text": "list [LIST]",
+                "arguments": {}
             }],
             "menus": {
                 axisMenu: {
@@ -23,7 +28,10 @@ class Transform {
         };
     }
     flipped(TYPE, util) {
-        return {name:"Bob",age:30};
+        return TYPE;
+    }
+    list() {
+        return [1,2,3,4,5];
     }
 }
 Scratch.extensions.register(new Transform());

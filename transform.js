@@ -4,7 +4,7 @@ class Transform {
             "id": "Transform",
             "name": "Transform",
             "blocks": [{
-                "opcode": "flipped",
+                "opcode": "transform_flipped",
                 "blockType": "Boolean",
                 "text": "flipped [AXIS]?",
                 "arguments": {
@@ -14,24 +14,32 @@ class Transform {
                     }
                 }
             }, {
-                "opcode": "list",
+                "opcode": "transform_scale",
                 "blockType": "Reporter",
-                "text": "list",
-                "arguments": {}
+                "text" "[DIRECTION] scale",
+                "arguments": {
+                    DIRECTION: {
+                        type: "String",
+                        menu: "directionMenu"
+                    }
+                }
             }],
             "menus": {
                 axisMenu: {
                     acceptReporters: true,
                     items: ["vertically", "horizontally"]
+                },
+                directionMenu: {
+                    acceptReporters: true,
+                    items: ["up", "down", "left", "right"]
                 }
             }
         };
     }
-    flipped(AXIS) {
+    transform_flipped({AXIS}) {
         return AXIS;
     }
-    list() {
-        return [1,2,3,4,5];
-    }
+    transform_scale({DIRECTION}) {
+        return DIRECTION;
 }
 Scratch.extensions.register(new Transform());

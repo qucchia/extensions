@@ -5,7 +5,7 @@ class Transform {
             "name": "Transform",
             "blocks": [{
                 "opcode": "x_pos",
-                "blockType": "Repoter",
+                "blockType": "Reporter",
                 "text": "x position",
                 "arguments": {}
                 }

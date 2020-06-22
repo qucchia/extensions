@@ -12,7 +12,7 @@ class Transform {
             ]
         };
     }
-    rotation_style({_, util}) {
+    rotation_style(_, util) {
         return util.target.rotationStyle || '';
     }
 }

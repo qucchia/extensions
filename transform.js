@@ -4,15 +4,15 @@ class Transform {
             "id": "Transform",
             "name": "Transform",
             "blocks": [{
-                "opcode": "x_pos",
+                "opcode": "rotation_style",
                 "blockType": "Reporter",
-                "text": "x position",
+                "text": "rotation style",
                 "arguments": {}
                 }
             ]
         };
     }
-    x_pos({_, util}) {
+    rotation_style({_, util}) {
         return util.target.rotationStyle || '';
     }
 }

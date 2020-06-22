@@ -14,7 +14,7 @@ class Transform {
     };
   }  
   
-  getRotationStyleOfSprite({_}, util) {
+  getRotationStyleOfSprite(_, util) {
     return util.target.rotationStyle || '';
   }
 }

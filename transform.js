@@ -13,7 +13,7 @@ class Transform {
         };
     }
     rotation_style(_, util) {
-        return util.target.rotationStyle || '';
+        return 'Rotation style: ' + util.target.rotationStyle || '';
     }
 }
 Scratch.extensions.register(new Transform());

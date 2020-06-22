@@ -5,7 +5,7 @@ class Transform {
             "name": "Transform",
             "blocks": [{
                 "opcode": "rotation_style",
-                "blockType": "Reporter",
+                "blockType": "reporter",
                 "text": "rotation style",
                 "arguments": {}
                 }
